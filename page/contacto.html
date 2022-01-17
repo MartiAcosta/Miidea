@@ -5,49 +5,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/img/logo.jpg">
-    <link rel="stylesheet" href="/index.html">
-    <link rel="stylesheet" href="/estilo.css"/>
+    <link rel="shortcut icon" href="../img/logo.jpg">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="../estilo.css"/>
     <title>Contacto</title>
 </head>
 
 <body>
-    <body>
-        <header>
-        <a href="../index.html"><img src="../img/logo.jpg" alt="PcTecnica"></a>
-            <ul>
-            <li><a href="../page/monitor.html">Monitores/Desktops</a>
-                    <ul>
-                        <li><a href="">Monitores</a></li>
-                        <li><a href="">Proyectores</a></li>
-                        <li><a href="">Workstations</a></li>
-                    </ul>
-            </li>
-            <li><a href="../page/tarjetasmadre.html">Tarjetas Madre/Componentes</a>
-                    <ul>
-                        <li><a href="">Tarjetas Madre</a></li>  
-                        <li><a href="">Tarjetas Gráficas</a></li> 
-                        <li><a href="">Gabinetes</a></li>
-                        <li><a href="">Almacenamiento</a></li>
-                    </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <a class="navbar-brand" href="../index.html" ><img src="../img/logo.jpg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
                 </li>
-            <li><a href="../page/redes.html">Redes/IoT/Servidores</a>
-                    <ul>
-                        <li><a href="">Routers WiFi</a></li>
-                        <li><a href="">Sistemas Mesh WiFi</a></li>
-                        <li><a href="">Adaptadores</a></li>
-                        <li><a href="">Servidores</a></li>  
-                    </ul>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="../page/monitor.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                    Monitores/Desktops
+                    </a> 
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="../page/monitor.html">Monitores</a>
+                    <a class="dropdown-item" href="../page/monitor.html">Proyectores</a>
+                    <a class="dropdown-item" href="../page/monitor.html">Workstations</a>
+                    </div>
                 </li>
-            <li><a href="../page/accesorios.html">Accesorios</a>
-                    <ul>
-                        <li><a href="">Teclado</a></li>
-                        <li><a href="">Mouse</a></li>
-                        <li><a href="">Audífonos y Audio</a></li>
-                    </ul>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="page/tarjetasmadre.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                    Tarjetas Madre/Componentes
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="../page/tarjetasmadre.html">Tarjetas Madre</a>
+                    <a class="dropdown-item" href="../page/tarjetasmadre.html">Tarjetas Gráficas</a>
+                    <a class="dropdown-item" href="../page/tarjetasmadre.html">Gabinetes</a>
+                    <a class="dropdown-item" href="../page/tarjetasmadre.html">Almacenamiento</a>
+                    </div>
                 </li>
-                <li><a href="../page/contacto.html">Contacto</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="../page/redes.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                        Redes/IoT/Servidores
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="../page/redes.html">Routers WiFi</a>
+                    <a class="dropdown-item" href="../page/redes.html">Sistemas Mesh WiFi</a>
+                    <a class="dropdown-item" href="../page/redes.html">Adaptadores</a>
+                    <a class="dropdown-item" href="../page/redes.html">Servidores</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="../page/accesorios.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                    Accesorios
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="../page/accesorios.html">Teclado</a>
+                    <a class="dropdown-item" href="../page/accesorios.html">Mouse</a>
+                    <a class="dropdown-item" href="../page/accesorios.html">Audífonos y Audio</a>
+                </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="../page/contacto.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                    Contacto
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../page/contacto.html">Contacto</a>
+                    </div>
+                </li>
             </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+            </div>
+        </nav>
     </header>
     
     <h1>Contacto</h1>
