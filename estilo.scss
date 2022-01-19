@@ -90,13 +90,8 @@ html{
 
 /* Vendido pag Inicio*/
 
-.vista1{
-    display: flex;
-    margin-bottom: 5%;
-}
-
-.vista1 img {
-    width: 5cm;
+.card-text {
+    font-size: 20px;
 }
 
 .vista2{
@@ -256,7 +251,7 @@ footer{
     width: 100%;
     max-width: 1200px;
     display: flex;
-    margin: 10px;
+    margin: 40px;
 }
 
 .column1{
