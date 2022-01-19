@@ -135,6 +135,7 @@ html{
     height: 5cm;
     background-size: cover;
     background-position: center center;
+    justify-content: space-evenly;
 }
 
 .tarjetamadre img{
@@ -165,57 +166,29 @@ html{
 
 h1{
     line-height: 2cm;
-    margin: 5px;
-    height: 40px;
+    height: 50px;
     font-family: sans-serif;
     font-size: 20px;
-    color: rgb(66, 65, 65);
-    border-color: black;
     word-spacing: 4px;
-    background-color:rgb(210, 215, 219);
-    align-items:flex-end;
+    text-align: center;
 }
 
 /*Pag Contacto*/
 
-.contacto{
-    display: grid;
-    padding: 80px;
-    justify-content: space-evenly;
-    background-color: white;
-    grid-template-columns: repeat(3,fr);
-    grid-template-rows: 1fr;
-    grid-template-areas: "informacion producto contacto";
-    border: 2px solid rgb(211, 211, 211);
-    height: 250px;
-    text-align: center;
-    line-height: 30px
+.form-contacto {
+    padding: 60px;
 }
 
-.info_producto {
-    grid-area: informacion;
-    border: 2px solid rgb(211, 211, 211);
-}
-
-.politica_producto {
-    grid-area: producto;
-    border: 2px solid rgb(211, 211, 211);
-}
-
-.contactenos {
-    grid-area: contacto;
-    border:2px solid rgb(211, 211, 211);
-}
-
-.contacto a{
-    text-decoration: none;
-    color: #0e0d0d;
-}
+.btn-light {
+    color: #f8f9fa;
+    background-color: black;
+    border-color: #dae0e5;
 
 /*Suscribete*/
 
 .suscribete {
     margin-bottom: 2%;
+    text-align: center;
 }
 
 .suscribete a{
@@ -224,14 +197,6 @@ h1{
 }
 
 /*Form*/
-
-.formulario{
-    width: 100%;
-    margin: 10px;
-    text-decoration: none;
-    text-align: center;
-    margin-bottom: 20%;
-}
 
 .testimonial {
     display: flex !important;
@@ -252,6 +217,8 @@ footer{
     max-width: 1200px;
     display: flex;
     margin: 40px;
+    padding-top: 1.42857rem;
+    padding-bottom: 0.42857rem;
 }
 
 .column1{
@@ -367,5 +334,10 @@ font-size: 15px;
     .contacto{
         height: auto;
         width: auto;
+    }
+
+    .container-body{
+        display: flex;
+        flex-direction: column;
     }
 }
