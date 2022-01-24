@@ -102,7 +102,7 @@ html {
 }
 
 .card:hover {
-  transform: scale(1.5);
+  transform: scale(1.1);
 }
 
 .vista2 {
@@ -256,6 +256,7 @@ footer {
 .row img {
   width: 25px;
   height: 25px;
+  margin: 3px;
 }
 
 .row img:hover {
