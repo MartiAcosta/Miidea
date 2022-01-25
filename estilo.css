@@ -92,6 +92,16 @@ html {
   color: #0e0d0d;
 }
 
+.datoscontacto img {
+  width: 1cm;
+  height: 1cm;
+  flex-direction: column;
+}
+
+.fab {
+  vertical-align: middle;
+}
+
 /* Vendido pag Inicio*/
 .shadow-sm {
   font-size: 30px;
@@ -226,14 +236,13 @@ footer {
   width: 100%;
   max-width: 1200px;
   display: flex;
-  margin: 40px;
   padding-top: 1.42857rem;
   padding-bottom: 0.42857rem;
 }
 
 .column1 {
   max-width: 200px;
-  margin-right: 10px;
+  margin: 8px;
 }
 
 .column1 h5 {
@@ -251,6 +260,17 @@ footer {
 
 .column2 h5 {
   font-size: 15px;
+}
+
+.row {
+  margin-bottom: 5px;
+  display: flow-root;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.row a i {
+  color: #f8f9fa;
 }
 
 .row img {
@@ -277,7 +297,7 @@ footer {
 
 .column4 {
   max-width: 300px;
-  margin-right: 20px;
+  margin-right: 30px;
 }
 
 .column4 h5 {
@@ -291,6 +311,11 @@ footer {
 
 .column5 h5 {
   font-size: 15px;
+}
+
+label {
+  display: inline;
+  margin: 15px;
 }
 
 .row label {
