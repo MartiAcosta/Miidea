@@ -15,30 +15,42 @@ html {
 }
 
 .bg-dark {
-  background-color: #020202 !important;
+  background-color: #fefefe !important;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: white;
+  color: black;
 }
 
-.btn-outline-success {
-  color: white;
-  border-color: white;
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: black;
 }
 
-.btn-outline-success:hover {
-  background-color: grey;
-  border-color: grey;
+.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link {
+  color: black;
 }
 
-.navbar-light .navbar-nav .nav-link:hover {
-  color: grey;
+.btn-light:hover {
+  color: #1d2124;
+  background-color: #1d2124;
+  border-color: #1d2124;
 }
 
-.navbar-light .navbar-toggler {
-  color: white;
-  border-color: white;
+.btn-light:not(:disabled):not(.disabled).active, .btn-light:not(:disabled):not(.disabled):active, .show > .btn-light.dropdown-toggle {
+  color: #212529;
+  background-color: #1d2124;
+  border-color: #1d2124;
+}
+
+.btn-outline-primary {
+  color: black;
+  border-color: black;
+}
+
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: #1d2124;
+  border-color: #1d2124;
 }
 
 .carousel-item {
@@ -119,11 +131,10 @@ html {
   display: grid;
   grid-template-areas: "img1 img2 img2 img4" "img1 img3 img3 img4";
   margin-bottom: 5%;
-  justify-items: center;
 }
 
 .vista2 img {
-  width: 5cm;
+  width: 7cm;
 }
 
 .vista2 img:hover {
@@ -228,8 +239,8 @@ h1 {
 /*Footer*/
 footer {
   width: 100%;
-  background-color: #0e0d0d;
-  color: white;
+  background-color: #f8f9fa;
+  color: #1d2124;
 }
 
 .container-body {
@@ -330,6 +341,26 @@ label {
   align-items: center;
 }
 
+.fa-instagram:before {
+  color: black;
+}
+
+.fa-facebook-square:before {
+  color: black;
+}
+
+.fa-phone:before {
+  color: black;
+}
+
+.fa-store:before {
+  color: black;
+}
+
+.fa, .far, .fas {
+  color: black;
+}
+
 @media only screen and (max-width: 800px) {
   .carousel-item {
     height: 250px;
@@ -341,6 +372,12 @@ label {
   }
 }
 @media only screen and (max-width: 480px) {
+  .testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .carousel-item {
     height: 150px;
   }
